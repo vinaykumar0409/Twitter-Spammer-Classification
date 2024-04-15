@@ -5,11 +5,11 @@
 ## **Model Deployment**
 
 ### Prerequisites
-You must have following packages installed :
+You must have the following packages installed :
 1. sklearn
 2. pandas
 3. numpy
-4. tensorflow
+4. TensorFlow
 5. matplotlib
 6. keras
 7. requests
@@ -17,11 +17,11 @@ You must have following packages installed :
 
 ### Deployment Structure
 It has three major parts :
-1. model.py - This contains code for our Machine Learning model to predict heart failure based on data in 'heart.csv' file.
-2. app.py - This contains Flask APIs that receives employee details through GUI or API calls, computes the precited value based on our model and returns it.
-3. templates - This folder contains the HTML template to allow user to enter patient details and displays the predicted heart failure probability.
+1. model.py - This contains code for our Machine Learning model to predict Twitter spammer classification on data.
+2. app.py - This contains Flask APIs that receive employee details through GUI or API calls, compute the precited value based on our model and returns it.
+3. templates - This folder contains the HTML template to allow users to enter user details and display the predicted Twitter spammer probability.
 
-Our final Model is in model.py file
+Our final Model is in the model.py file
 
 ### Running the project
 
@@ -31,7 +31,7 @@ python model.py
 ```
 This would create a serialized version of our model into a file model.pkl
 
-2. Run app.py using below command to start Flask API
+2. Run app.py using the below command to start Flask API
 ```
 python app.py
 ```
@@ -41,11 +41,11 @@ By default, flask will run on port 5000.
 
 You will be asked to enter the username on the webpage
 
-Enter twitter username:
+Enter Twitter username:
 
-* username : username of a twitter profile
+* Username: username of a Twitter profile
 
-Now hit the Check spam button.
+Now hit the Check Spam button.
 If everything goes well, you should  be able to see the output on the HTML page!
 
-> Note : These steps are for deployment of model on localhost.
+> Note: These steps are for deploying a model on localhost.
